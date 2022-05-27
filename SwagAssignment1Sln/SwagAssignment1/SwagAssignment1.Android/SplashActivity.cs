@@ -8,7 +8,7 @@ using AndroidX.AppCompat.App;
 
 namespace SwagAssignment1
 {
-    [Activity(Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true)
+    [Activity(Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true)]
     public class SplashActivity : AppCompatActivity
     {
         static readonly string TAG = "X:" + typeof (SplashActivity).Name;

@@ -14,5 +14,10 @@ namespace SwagAssignment1
         {
             InitializeComponent();
         }
+
+        private async void SignupButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HomePage1());
+        }
     }
 }

@@ -1,24 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SwagAssignment1.MainPage">
+             x:Class="SwagAssignment1.MainPage" BackgroundColor="#67217A" NavigationPage.HasNavigationBar="False">
+             
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+    <StackLayout VerticalOptions="CenterAndExpand" Padding="5">
+        <StackLayout Orientation="Horizontal">
+            <Entry Placeholder="First Name" PlaceholderColor="White" TextColor="White"></Entry>
+            <Entry Placeholder="Last Name" PlaceholderColor="White" TextColor="White"></Entry>
+    </StackLayout >
+        <Entry Placeholder="Email" PlaceholderColor="White" TextColor="White"></Entry>
+        <Entry Placeholder="Password" PlaceholderColor="White" IsPassword="True" TextColor="White"></Entry>
+        <Entry Placeholder ="Confirm Password" PlaceholderColor="White" IsPassword="True" TextColor="White"></Entry>
+        <Label Text="Date Of Birth" TextColor="White"></Label>
+        <DatePicker TextColor="White"></DatePicker >
+        <Label Text="Address" TextColor="White"></Label>
+        <Editor TextColor="White"></Editor>
+    <StackLayout Orientation="Horizontal" >
+            <Label Text="Save Password" TextColor="White"></Label>
+        <Switch IsToggled="false" ></Switch>
     </StackLayout>
-
+    <Button x:Name="SignupButton" BackgroundColor="LightGray" Text="Sign Up" TextColor="Purple" Clicked="SignupButton_Clicked"></Button>
+        <Label Text="Already have account? Sign In" TextColor="White" ></Label>
+    </StackLayout>
+    
 </ContentPage>

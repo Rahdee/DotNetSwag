@@ -1,33 +1,29 @@
 using Android.App;
+using Android.Content.PM;
 using Android.OS;
-using Android.Support.V7.App;
+using Android.Runtime;
+// using Android.Support.V7.App;
 using Android.Util;
 using Android.Widget;
 
-namespace com.xamarin.sample.splashscreen
+namespace SwagAssignment1
 {
-    [Activity(Label = "@string/ApplicationName")]
-    public class MainActivity : AppCompatActivity
+    [Activity(Label = "SWAG", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
+    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
-        static readonly string TAG = "X:" + typeof (MainActivity).Name;
-        Button _button;
-        int _clickCount;
-
-        protected override void OnCreate(Bundle bundle)
+        protected override void OnCreate(Bundle savedInstanceState)
         {
-            base.OnCreate(bundle);
-            SetContentView(Resource.Layout.Main);
+            base.OnCreate(savedInstanceState);
 
-            _button = FindViewById<Button>(Resource.Id.MyButton);
+            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            LoadApplication(new App());
+        }
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
+        {
+            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
-            _button.Click += (sender, args) =>
-                             {
-                                 string message = string.Format("You clicked {0} times.", ++_clickCount);
-                                 _button.Text = message;
-                                 Log.Debug(TAG, message);
-                             };
-
-            Log.Debug(TAG, "MainActivity is loaded.");
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
 }

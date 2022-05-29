@@ -19,5 +19,6 @@ namespace SwagAssignment1
         {
             await Navigation.PushAsync(new HomePage1());
         }
+
     }
 }

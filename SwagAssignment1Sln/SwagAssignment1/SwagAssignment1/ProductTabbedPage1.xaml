@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:SwagAssignment1"
             x:Class="SwagAssignment1.ProductTabbedPage1" NavigationPage.HasNavigationBar="False">
   <!--Pages can be added as references or inline-->
-   
-    <ContentPage Title="Males" />
-  <ContentPage Title="Females" />
-  <ContentPage Title="Kids" />
+
+
+    <local:MalesClothing1 Title="Males" />
+  <local:FemalesClothing1 Title="Females" />
+  <local:KidsClothing1 Title="Kids" />
 </TabbedPage>

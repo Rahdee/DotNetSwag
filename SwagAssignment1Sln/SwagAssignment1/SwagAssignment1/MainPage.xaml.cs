@@ -17,7 +17,7 @@ namespace SwagAssignment1
 
         private async void SignupButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new HomePage1());
+            await Navigation.PushAsync(new ProductTabbedPage1());
 
         }
     }

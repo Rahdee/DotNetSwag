@@ -2,11 +2,26 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SwagAssignment1.FemalesClothing1">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    
+    <Grid Margin="10" Padding="10,0,0,0"  HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" 
+           RowSpacing="5" ColumnSpacing="5">
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+
+        </Grid.ColumnDefinitions>
+        <Image Source="DotNetWoman1" Grid.Column="0" Grid.Row="0"  Aspect="AspectFit"/>
+        <Image Source="DotNetWoman2" Grid.Column="0" Grid.Row="1"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Image Source="DotNetWoman3" Grid.Column="1" Grid.Row="0"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Image Source="DotNetWoman4" Grid.Column="1" Grid.Row="1"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Image Source="DotNetWoman5" Grid.Column="0" Grid.Row="2"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        
+    </Grid>
 </ContentPage>

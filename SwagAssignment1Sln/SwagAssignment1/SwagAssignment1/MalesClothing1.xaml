@@ -1,19 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SwagAssignment1.MalesClothing1">
-    <Grid >
+             x:Class="SwagAssignment1.MalesClothing1" >
+    
+    <Grid Margin="10" Padding="10,0,0,0"  HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" 
+           RowSpacing="5" ColumnSpacing="5">
         
         <Grid.RowDefinitions>
-            <RowDefinition Height="50" />
+            
             <RowDefinition Height="*" />
-            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Image Source="DotNET1.png" Grid.Column="0" Grid.Row="0" />
+        <Image Source="DotNET1.png" Grid.Column="0" Grid.Row="0"  Aspect="AspectFit"/>
     </Grid>
 </ContentPage>
     

@@ -22,7 +22,7 @@ namespace SwagAssignment1
 
             if (pic != null)
             {
-                //    if (pic.Source.)
+                
                 var source = pic.Source as FileImageSource;
 
                 string sku = string.Empty;
@@ -35,6 +35,37 @@ namespace SwagAssignment1
 
                 Navigation.PushAsync(new CaptureOrderingDataPage1(sku,source.File));
 
+            }
+
+            if (pic != null)
+            {
+                
+                var source = pic.Source as FileImageSource;
+
+                string sku = string.Empty;
+
+                if (source.File.ToLower() == "dotnetwoman3")
+                    sku = "SKU0003";
+                else
+                if (source.File.ToLower() == "dotnetwoman4")
+                    sku = "SKU0004";
+
+                Navigation.PushAsync(new CaptureOrderingDataPage1(sku, source.File));
+            }
+            if (pic != null)
+            {
+                
+                var source = pic.Source as FileImageSource;
+
+                string sku = string.Empty;
+
+                if (source.File.ToLower() == "dotnetwoman5")
+                    sku = "SKU0005";
+                else
+                if (source.File.ToLower() == "dotnetwoman7")
+                    sku = "SKU0007";
+
+                
 
             }
         }

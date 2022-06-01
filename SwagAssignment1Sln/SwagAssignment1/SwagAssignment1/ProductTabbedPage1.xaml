@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:SwagAssignment1"
             x:Class="SwagAssignment1.ProductTabbedPage1" NavigationPage.HasNavigationBar="True" BarTextColor="LightGray" IconImageSource="ListIcon"  BarBackgroundColor="#67217A" >
     <!--Pages can be added as references or inline-->
-
     
     <local:MalesClothing1 Title="Males" />
   <local:FemalesClothing1 Title="Females" />

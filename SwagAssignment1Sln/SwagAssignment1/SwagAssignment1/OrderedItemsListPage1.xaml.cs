@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OrderedItemsDatabase;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,5 +17,22 @@ namespace SwagAssignment1
         {
             InitializeComponent();
         }
+
+        private async void ItemAdded_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new OrderedItemsListPage1());
+        }
+        private async void ListView_ItemSelected(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new OrderedItemsListPage1());
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            OrderedItemsDataBase1 database = OrderedItemsDataBase1.Instance;
+            listView.ItemsSource = database.GetItems();
+        }
+
     }
 }

@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Kids and BabiesClothing1.xaml.cs">
-      <DependentUpon>Kids and BabiesClothing1.xaml</DependentUpon>
+    <Compile Update="KidsandBabiesClothing1.xaml.cs">
+      <DependentUpon>KidsandBabiesClothing1.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -33,7 +33,7 @@
     <EmbeddedResource Update="HomePage1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Kids and BabiesClothing1.xaml">
+    <EmbeddedResource Update="KidsandBabiesClothing1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="MalesClothing1.xaml">

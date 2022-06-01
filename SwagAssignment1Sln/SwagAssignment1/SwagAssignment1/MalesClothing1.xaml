@@ -16,12 +16,47 @@
             <ColumnDefinition Width="*" />
             
         </Grid.ColumnDefinitions>
-        <Image Source="DotNetMan1" Grid.Column="0" Grid.Row="0"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-        <Image Source="DotNetMan2" Grid.Column="0" Grid.Row="1"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-        <Image Source="DotNET4" Grid.Column="1" Grid.Row="0"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-        <Image Source="DotNeT2" Grid.Column="1" Grid.Row="1"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-        <Image Source="cnet1" Grid.Column="0" Grid.Row="2"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-        <Image Source="DotNetMan3" Grid.Column="1" Grid.Row="2"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Image Source="DotNetMan1" Grid.Column="0" Grid.Row="0"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </Image.GestureRecognizers>
+        
+        </Image>
+        <Image Source="DotNetMan2" Grid.Column="0" Grid.Row="1"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Image.GestureRecognizers>
+            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+        </Image.GestureRecognizers>
+
+        </Image>
+
+        <Image Source="DotNET4" Grid.Column="1" Grid.Row="0"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Image.GestureRecognizers>
+            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+        </Image.GestureRecognizers>
+
+        </Image>
+
+        <Image Source="DotNeT2" Grid.Column="1" Grid.Row="1"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Image.GestureRecognizers>
+            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+        </Image.GestureRecognizers>
+
+        </Image>
+
+        <Image Source="cnet1" Grid.Column="0" Grid.Row="2"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Image.GestureRecognizers>
+            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+        </Image.GestureRecognizers>
+
+        </Image>
+
+        <Image Source="DotNetMan3" Grid.Column="1" Grid.Row="2"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Image.GestureRecognizers>
+            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+        </Image.GestureRecognizers>
+
+        </Image>
+
     </Grid>
 </ContentPage>
     

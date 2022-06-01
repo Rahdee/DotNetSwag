@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OrderedItemsDatabase;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,23 +13,30 @@ namespace SwagAssignment1
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CaptureOrderingDataPage1 : ContentPage
     {
-        public CaptureOrderingDataPage1()
+        public string Sku { get; set; }
+        public string Filename { get; set; }
+
+
+        public CaptureOrderingDataPage1(string sku, string filename)
         {
             InitializeComponent();
+
+            Sku = sku;
+            Filename = filename;
         }
         async void OnSaveClicked(object sender, EventArgs e)
         {
             var ordered = (OrderedItems)BindingContext;
-            CaptureOrderingDataPage1 database = OrderedItemsDatabase.Instance;
+            OrderedItemsDataBase1 database = OrderedItemsDataBase1.Instance;
             database.SaveItem(ordered);
             await Navigation.PopAsync();
         }
 
         async void OnDeleteClicked(object sender, EventArgs e)
         {
-            var OrderedItemsDatabase = (OrderedItems)BindingContext;
-            CaptureOrderingDataPage1 database = OrderedItemsDatabase.Instance;
-            database.DeleteItem(ordered);
+            var order = (OrderedItems)BindingContext;
+            OrderedItemsDataBase1 database = OrderedItemsDataBase1.Instance;
+            database.DeleteItem(order);
             await Navigation.PopAsync();
         }
 

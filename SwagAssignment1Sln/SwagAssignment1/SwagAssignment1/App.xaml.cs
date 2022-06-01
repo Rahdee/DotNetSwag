@@ -13,7 +13,7 @@ namespace SwagAssignment1
             NavigationPage navPage=new NavigationPage(new MainPage());
 
             MainPage = navPage;
-           
+            
 
         }
 

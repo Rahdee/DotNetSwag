@@ -2,9 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SwagAssignment1.MalesClothing1" >
-    
-    <Grid Margin="10" Padding="5,5,5,5"  
-           RowSpacing="-5" ColumnSpacing="-2" Scale="1">
+
+    <Grid Margin="4" Padding="0,5,0,-2">
         
         <Grid.RowDefinitions>
             
@@ -17,13 +16,12 @@
             <ColumnDefinition Width="*" />
             
         </Grid.ColumnDefinitions>
-        <Image Source="DotNetMan1.png"  Grid.Column="0" Grid.Row="0"   Aspect="AspectFill"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-        <Image Source="DotNetMan2.png" Grid.Column="0" Grid.Row="1"   Aspect="AspectFill"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-        <Image Source="cnet1.png" Grid.Column="1" Grid.Row="0"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-        <Image Source="DotNetMan3.png" Grid.Column="1" Grid.Row="1"   Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-        <Image Source="DotNetMan4.png" Grid.Column="0" Grid.Row="2"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-        <Image Source="DotNet5.png" Grid.Column="1" Grid.Row="2"   Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-        
+        <Image Source="DotNetMan1" Grid.Column="0" Grid.Row="0"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Image Source="DotNetMan2" Grid.Column="0" Grid.Row="1"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Image Source="DotNET4" Grid.Column="1" Grid.Row="0"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Image Source="DotNeT2" Grid.Column="1" Grid.Row="1"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Image Source="cnet1" Grid.Column="0" Grid.Row="2"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Image Source="DotNetMan3" Grid.Column="1" Grid.Row="2"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
     </Grid>
 </ContentPage>
     

@@ -18,13 +18,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Kids and BabiesClothing1.xaml.cs">
+      <DependentUpon>Kids and BabiesClothing1.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="FemalesClothing1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="HomePage1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="KidsClothing1.xaml">
+    <EmbeddedResource Update="Kids and BabiesClothing1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="MalesClothing1.xaml">

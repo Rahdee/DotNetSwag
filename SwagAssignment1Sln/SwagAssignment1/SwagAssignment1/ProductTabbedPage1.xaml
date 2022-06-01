@@ -7,5 +7,5 @@
     
     <local:MalesClothing1 Title="Males" />
   <local:FemalesClothing1 Title="Females" />
-  <local:KidsClothing1 Title="Kids" />
+  <local:KidsClothing1 Title="Kids/Babies" />
 </TabbedPage>

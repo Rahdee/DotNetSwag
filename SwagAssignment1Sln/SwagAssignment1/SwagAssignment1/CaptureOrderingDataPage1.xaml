@@ -2,24 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SwagAssignment1.CaptureOrderingDataPage1">
-    
-        <StackLayout Margin="20"
+
+    <StackLayout Margin="20"
                  VerticalOptions="StartAndExpand">
-            <Button Text="Name"
-                    Clicked="OnSaveClicked"/>
-            <Entry Text="{Binding Name}" />
-            <Button Text="Gender" 
-                    Clicked="OnSaveClicked"/>
-            <Button Text="{Binding Notes}"
-                    Clicked="OnSaveClicked"/>
-            <Label Text="T-Shirt Size(S,M,L,XL)" />
-             
-            <Button Text="Date of Order"
-                Clicked="OnSaveClicked" />
-            <Button Text="T-Shirt Color"
-                Clicked="OnDeleteClicked" />
-            <Button Text="Shipping Adress"
-                Clicked="OnCancelClicked" />
-       
-        </StackLayout>
+        <Label Text="Name" />
+        <Entry Text="{Binding Name}" />
+        <Label Text="Gender" />
+        <Entry Text="{Binding Notes}" />
+        <Label Text="T-Shirt Size(S,M,L,XL)" />
+        <Switch IsToggled="{Binding Done}" />
+        
+
+    </StackLayout>
 </ContentPage>
+
+
+ 

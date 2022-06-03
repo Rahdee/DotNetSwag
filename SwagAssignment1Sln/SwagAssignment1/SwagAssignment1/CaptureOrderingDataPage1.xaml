@@ -3,27 +3,60 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SwagAssignment1.CaptureOrderingDataPage1">
 
-    <StackLayout Margin="20"
-                 VerticalOptions="StartAndExpand">
-        <Label Text="Name" />
+    <StackLayout Margin="11"
+                 VerticalOptions="StartAndExpand" >
+        <Label Text="Name" TextColor="Purple" FontAttributes="Bold" />
         <Entry Text="{Binding Name}" />
-        <Label Text="Gender" />
-        <Entry Text="{Binding Notes}" />
-        <Label Text="T-Shirt Size(S,M,L,XL)" />
-        <Label Text="T-shirt color" />
+        <Label Text="Gender" TextColor="Purple" FontAttributes="Bold"  />
+        <StackLayout Orientation="Horizontal" >
+            <Label Text="M"></Label>
+            <CheckBox Color="purple">
+
+            </CheckBox>
+            <Label Text="F"></Label>
+            <CheckBox Color="purple">
+
+            </CheckBox>
+        </StackLayout>
+        <Label Text="T-Shirt Size" TextColor="Purple" FontAttributes="Bold" />
+        <StackLayout Orientation="Horizontal" >
+            <Label Text="S"></Label>
+            <CheckBox Color="purple">
+
+            </CheckBox>
+            <Label Text="M"></Label>
+            <CheckBox Color="purple">
+
+            </CheckBox>
+            <Label Text="L"></Label>
+            <CheckBox Color="purple">
+
+            </CheckBox>
+            <Label Text="XL"></Label>
+            <CheckBox Color="purple">
+
+            </CheckBox>
+            <Label Text="XXL"></Label>
+            <CheckBox Color="purple">
+
+            </CheckBox>
+        </StackLayout>
         <Entry Text="{Binding Name}" />
-        <Label Text="Date of Order" />
+        <Label Text="T-shirt color" TextColor="Purple" FontAttributes="Bold" />
+        <Entry Text="{Binding Name}" />
+        <Label Text="Date of Order" TextColor="Purple" FontAttributes="Bold"/>
         <Entry Text="{Binding Notes}" />
-        <Label Text="Shipping Address" />
+        <Label Text="Shipping Address" TextColor="Purple" FontAttributes="Bold"/>
         <Entry Text="{Binding Notes}" />
         <Button Text="Save"
-                Clicked="OnSaveClicked" />
+                Clicked="OnSaveClicked" TextColor="Purple" BackgroundColor="LightGray" FontAttributes="Bold" />
         <Button Text="Delete"
-                Clicked="OnDeleteClicked" />
+                Clicked="OnDeleteClicked" TextColor="Purple" BackgroundColor="LightGray" FontAttributes="Bold"/>
         <Button Text="Cancel"
-                Clicked="OnCancelClicked" />
-        <Label Text="Done" />
-        <Switch IsToggled="{Binding Done}" />
+                Clicked="OnCancelClicked" TextColor="Purple" BackgroundColor="LightGray" FontAttributes="Bold" />
+        <Label Text="Done" TextColor="Purple" />
+        <Switch IsToggled="{Binding Done}" OnColor="Purple" />
+        
         
 
     </StackLayout>

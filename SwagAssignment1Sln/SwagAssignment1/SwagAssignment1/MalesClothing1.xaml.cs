@@ -34,7 +34,7 @@ namespace SwagAssignment1
                 if (source.File.ToLower() == "DotNetMan2")
                     sku = "SKU0008";
 
-                Navigation.PushAsync(new CaptureOrderingDataPage1(sku, source.File));
+                
 
             }
 

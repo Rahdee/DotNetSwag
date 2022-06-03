@@ -50,7 +50,6 @@ namespace SwagAssignment1
                 if (source.File.ToLower() == "dotnetwoman4")
                     sku = "SKU0004";
 
-                Navigation.PushAsync(new CaptureOrderingDataPage1(sku, source.File));
             }
             if (pic != null)
             {

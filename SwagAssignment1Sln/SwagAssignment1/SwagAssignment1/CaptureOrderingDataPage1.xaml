@@ -10,6 +10,19 @@
         <Label Text="Gender" />
         <Entry Text="{Binding Notes}" />
         <Label Text="T-Shirt Size(S,M,L,XL)" />
+        <Label Text="T-shirt color" />
+        <Entry Text="{Binding Name}" />
+        <Label Text="Date of Order" />
+        <Entry Text="{Binding Notes}" />
+        <Label Text="Shipping Address" />
+        <Entry Text="{Binding Notes}" />
+        <Button Text="Save"
+                Clicked="OnSaveClicked" />
+        <Button Text="Delete"
+                Clicked="OnDeleteClicked" />
+        <Button Text="Cancel"
+                Clicked="OnCancelClicked" />
+        <Label Text="Done" />
         <Switch IsToggled="{Binding Done}" />
         
 

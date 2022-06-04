@@ -18,7 +18,7 @@
         <Editor TextColor="White"></Editor>
     <StackLayout Orientation="Horizontal" >
             <Label Text="Save Password" TextColor="White"></Label>
-        <Switch IsToggled="false" ></Switch>
+        <Switch IsToggled="false" OnColor="LightGray" ></Switch>
     </StackLayout>
     <Button x:Name="SignupButton" BackgroundColor="LightGray" Text="Sign Up" TextColor="Purple" Clicked="SignupButton_Clicked"></Button>
         <Label Text="Already have account? Sign In" TextColor="White" ></Label>

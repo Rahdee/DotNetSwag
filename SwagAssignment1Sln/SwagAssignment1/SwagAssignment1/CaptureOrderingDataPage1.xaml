@@ -3,62 +3,62 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SwagAssignment1.CaptureOrderingDataPage1">
 
-    <StackLayout Margin="11"
-                 VerticalOptions="StartAndExpand" >
-        <Label Text="Name" TextColor="Purple" FontAttributes="Bold" />
+    <StackLayout Margin="10" Padding="0,0,-5,0"
+                 VerticalOptions="StartAndExpand">
+        <Label Text="Name" TextColor="Purple" FontAttributes="Bold" FontSize="Subtitle" Margin="0,3,0,-2" />
         <Entry Text="{Binding Name}" />
-        <Label Text="Gender" TextColor="Purple" FontAttributes="Bold"  />
-        <StackLayout Orientation="Horizontal" >
-            <Label Text="M"></Label>
-            <CheckBox Color="purple">
+        <Label Text="Surname" TextColor="Purple" FontAttributes="Bold" FontSize="Subtitle" Margin="0,3,0,-2"/>
+        <Entry Text="{Binding Name}" />
+        <Label Text="Gender" TextColor="Purple" FontAttributes="Bold" FontSize="Subtitle" Margin="0,3,0,-2" />
+        <StackLayout Orientation="Horizontal" Padding="0,3,0,5" >
+            <Label Text="M" TextColor="Purple" Padding="0,3,0,5" ></Label>
+            <CheckBox Color="Purple">
 
             </CheckBox>
-            <Label Text="F"></Label>
+            <Label Text="F" TextColor="Purple" Padding="0,3,0,5" ></Label>
             <CheckBox Color="purple">
 
             </CheckBox>
         </StackLayout>
-        <Label Text="T-Shirt Size" TextColor="Purple" FontAttributes="Bold" />
-        <StackLayout Orientation="Horizontal" >
-            <Label Text="S"></Label>
+
+        <Label Text="T-Shirt Size" TextColor="Purple" FontAttributes="Bold" FontSize="Subtitle" Margin="0,-3,0,-2" />
+        <StackLayout Orientation="Horizontal" Padding="0,3,0,-5"   >
+            <Label Text="S" TextColor="Purple" Padding="0,3,0,5" ></Label>
             <CheckBox Color="purple">
 
             </CheckBox>
-            <Label Text="M"></Label>
+            <Label Text="M" TextColor="Purple"></Label>
             <CheckBox Color="purple">
 
             </CheckBox>
-            <Label Text="L"></Label>
+            <Label Text="L" TextColor="Purple"></Label>
             <CheckBox Color="purple">
 
             </CheckBox>
-            <Label Text="XL"></Label>
+            <Label Text="XL" TextColor="Purple"></Label>
             <CheckBox Color="purple">
 
             </CheckBox>
-            <Label Text="XXL"></Label>
+            <Label Text="XXL" TextColor="Purple"></Label>
             <CheckBox Color="purple">
 
             </CheckBox>
         </StackLayout>
+
+        <Label Text="T-shirt color" TextColor="Purple" FontAttributes="Bold" FontSize="Subtitle" Margin="0,5,0,-2" />
         <Entry Text="{Binding Name}" />
-        <Label Text="T-shirt color" TextColor="Purple" FontAttributes="Bold" />
-        <Entry Text="{Binding Name}" />
-        <Label Text="Date of Order" TextColor="Purple" FontAttributes="Bold"/>
-        <Entry Text="{Binding Notes}" />
-        <Label Text="Shipping Address" TextColor="Purple" FontAttributes="Bold"/>
+        <Label Text="Date Of Birth" TextColor="Purple" Margin="0,5,0,-2" ></Label>
+        <DatePicker TextColor="Purple" FontSize="Subtitle" Margin="0,3,0,-2"></DatePicker >
+        <Label Text="Shipping Address" TextColor="Purple" FontSize="Subtitle" FontAttributes="Bold" Margin="0,3,0,-2"/>
         <Entry Text="{Binding Notes}" />
         <Button Text="Save"
-                Clicked="OnSaveClicked" TextColor="Purple" BackgroundColor="LightGray" FontAttributes="Bold" />
+                Clicked="OnSaveClicked" TextColor="Purple" BackgroundColor="LightGray" FontAttributes="Bold" FontSize="Default" />
         <Button Text="Delete"
-                Clicked="OnDeleteClicked" TextColor="Purple" BackgroundColor="LightGray" FontAttributes="Bold"/>
+                Clicked="OnDeleteClicked" TextColor="Purple" BackgroundColor="LightGray" FontAttributes="Bold" FontSize="Default"/>
         <Button Text="Cancel"
-                Clicked="OnCancelClicked" TextColor="Purple" BackgroundColor="LightGray" FontAttributes="Bold" />
-        <Label Text="Done" TextColor="Purple" />
-        <Switch IsToggled="{Binding Done}" OnColor="Purple" />
+                Clicked="OnCancelClicked" TextColor="Purple" BackgroundColor="LightGray" FontAttributes="Bold" FontSize="Default" />
         
-        
-
+       
     </StackLayout>
 </ContentPage>
 

@@ -16,6 +16,7 @@ namespace SwagAssignment1
         public string Sku { get; set; }
         public string Filename { get; set; }
 
+        public Xamarin.Forms.Color TextColor { get; set; }
 
         public CaptureOrderingDataPage1(string sku, string filename)
         {

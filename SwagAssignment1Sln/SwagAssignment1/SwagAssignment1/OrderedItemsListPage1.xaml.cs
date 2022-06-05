@@ -18,14 +18,6 @@ namespace SwagAssignment1
             InitializeComponent();
         }
 
-        private async void ItemAdded_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new OrderedItemsListPage1());
-        }
-        private async void ListView_ItemSelected(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new OrderedItemsListPage1());
-        }
         protected override void OnAppearing()
         {
             base.OnAppearing();
@@ -34,5 +26,34 @@ namespace SwagAssignment1
             listView.ItemsSource = database.GetItems();
         }
 
+        async void OnItemAdded(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new OrderedItemsListPage1
+            {
+                BindingContext = new OrderedItems()
+            });
+        }
+
+        async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem != null)
+            {
+                await Navigation.PushAsync(new OrderedItemsListPage1
+                {
+                    BindingContext = e.SelectedItem as OrderedItems
+                });
+            }
+
+        }
+
+        private async void ItemAdded_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new OrderedItemsListPage1());
+        }
+        private async void ListView_ItemSelected(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new OrderedItemsListPage1());
+        }
+       
     }
 }

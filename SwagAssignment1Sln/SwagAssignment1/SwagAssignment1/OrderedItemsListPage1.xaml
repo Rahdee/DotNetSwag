@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SwagAssignment1.OrderedItemsListPage1">
     <ContentPage.ToolbarItems>
-        <ToolbarItem x:Name="ItemAdded" Text="+" Clicked="ItemAdded_Clicked">
+        <ToolbarItem x:Name="ItemsAdded" Text="+" Clicked="ItemAdded_Clicked">
             <ToolbarItem.IconImageSource>
                 <OnPlatform x:TypeArguments="ImageSource">
                     <On Platform="Android, UWP"

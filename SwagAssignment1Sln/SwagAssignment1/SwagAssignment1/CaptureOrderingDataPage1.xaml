@@ -3,53 +3,57 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SwagAssignment1.CaptureOrderingDataPage1">
 
-    <StackLayout Margin="15" 
+    <StackLayout Margin="14" 
                  VerticalOptions="StartAndExpand">
-        <Label Text="Name" TextColor="Purple" FontAttributes="Bold" FontSize="Subtitle" Margin="0,3,0,-2" />
+        <Label Text="Name" TextColor="Purple" FontAttributes="Bold" FontSize="Subtitle" Margin="0,5,0,-10"/>
         <Entry Text="{Binding Name}" />
-        <Label Text="Surname" TextColor="Purple" FontAttributes="Bold" FontSize="Subtitle" Margin="0,3,0,-2"/>
+        <Label Text="Surname" TextColor="Purple" FontAttributes="Bold" FontSize="Subtitle" Margin="0,5,0,-10"/>
         <Entry Text="{Binding Name}" />
-        <Label Text="Gender" TextColor="Purple" FontAttributes="Bold" FontSize="Subtitle" Margin="0,3,0,-2" />
+        <Label Text="Gender" TextColor="Purple" FontAttributes="Bold" FontSize="Subtitle" Margin="0,5,0,-10" />
+
         <StackLayout Orientation="Horizontal" Padding="0,3,0,5" >
-            <Label Text="M" TextColor="Purple" Padding="0,3,0,5" ></Label>
+            <Label Text="M" TextColor="Purple" Padding="0,3,0,5" FontAttributes="Bold" FontSize="Subtitle"  ></Label>
             <CheckBox Color="Purple">
+                
 
             </CheckBox>
-            <Label Text="F" TextColor="Purple" Padding="0,3,0,5" ></Label>
-            <CheckBox Color="purple">
+            <Label Text="F" TextColor="Purple" Padding="0,3,0,5" FontAttributes="Bold" FontSize="Subtitle" ></Label>
+            <CheckBox Color="purple" >
+                
 
             </CheckBox>
         </StackLayout>
 
-        <Label Text="T-Shirt Size" TextColor="Purple" FontAttributes="Bold" FontSize="Subtitle" Margin="0,-3,0,-2" />
+        <Label Text="T-Shirt Size" TextColor="Purple" FontAttributes="Bold" FontSize="Subtitle" Margin="0,-3,0,-10" />
         <StackLayout Orientation="Horizontal" Padding="0,3,0,-5"   >
-            <Label Text="S" TextColor="Purple" Padding="0,3,0,5" ></Label>
+            <Label Text="S" TextColor="Purple" Padding="0,3,0,5" FontAttributes="Bold" ></Label>
             <CheckBox Color="purple">
 
             </CheckBox>
-            <Label Text="M" TextColor="Purple"></Label>
+            <Label Text="M" TextColor="Purple" FontAttributes="Bold" FontSize="Subtitle"></Label>
             <CheckBox Color="purple">
 
             </CheckBox>
-            <Label Text="L" TextColor="Purple"></Label>
+            <Label Text="L" TextColor="Purple" FontAttributes="Bold" FontSize="Subtitle"></Label>
             <CheckBox Color="purple">
 
             </CheckBox>
-            <Label Text="XL" TextColor="Purple"></Label>
+            <Label Text="XL" TextColor="Purple" FontAttributes="Bold" FontSize="Subtitle"></Label>
             <CheckBox Color="purple">
 
             </CheckBox>
-            <Label Text="XXL" TextColor="Purple"></Label>
+            <Label Text="XXL" TextColor="Purple" FontAttributes="Bold" FontSize="Subtitle"></Label>
             <CheckBox Color="purple">
 
             </CheckBox>
         </StackLayout>
 
-        <Label Text="T-shirt color" TextColor="Purple" FontAttributes="Bold" FontSize="Subtitle" Margin="0,-3,0,-2" />
+        <Label Text="T-shirt color" TextColor="Purple" FontAttributes="Bold" FontSize="Subtitle" Margin="0,5,0,-10" />
         <Entry Text="{Binding Name}" />
-        <Label Text="Date Of Birth" TextColor="Purple" Margin="0,5,0,-2" ></Label>
-        <DatePicker TextColor="Purple" FontSize="Subtitle" Margin="0,3,0,-2"></DatePicker >
-        <Label Text="Shipping Address" TextColor="Purple" FontSize="Subtitle" FontAttributes="Bold" Margin="0,3,0,-2"/>
+        <Label Text="Date Of Birth" TextColor="Purple" FontAttributes="Bold" Margin="0,5,0,-10" FontSize="Subtitle" ></Label>
+        <DatePicker  FontSize="Subtitle" Margin="0,3,0,-2"></DatePicker >
+
+        <Label Text="Shipping Address" TextColor="Purple" FontSize="Subtitle" FontAttributes="Bold"  Margin="0,5,0,-10"/>
         <Entry Text="{Binding Notes}" />
         <Button Text="Save"
                 Clicked="OnSaveClicked" TextColor="Purple" BackgroundColor="LightGray" FontAttributes="Bold" FontSize="Default" />
@@ -57,10 +61,16 @@
                 Clicked="OnDeleteClicked" TextColor="Purple" BackgroundColor="LightGray" FontAttributes="Bold" FontSize="Default"/>
         <Button Text="Cancel"
                 Clicked="OnCancelClicked" TextColor="Purple" BackgroundColor="LightGray" FontAttributes="Bold" FontSize="Default" />
-        
-       
+
     </StackLayout>
 </ContentPage>
 
 
- 
+
+
+
+
+
+
+
+

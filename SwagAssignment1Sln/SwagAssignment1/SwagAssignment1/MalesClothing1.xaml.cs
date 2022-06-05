@@ -71,5 +71,10 @@ namespace SwagAssignment1
 
             }
         }
+
+        private void ScrollView_Scrolled(object sender, ScrolledEventArgs e)
+        {
+
+        }
     }
 }
